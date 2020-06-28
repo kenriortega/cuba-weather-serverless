@@ -6,7 +6,7 @@ const {
   UtilsService
 } = require('cuba-weather-javascript')
 
-module.exports = (req, res) => {
+module.exports = async (req, res) => {
   // res.json({ name: , email: 'john@example.com' })
 
   let municipality = MUNICIPALITIES.find(
@@ -22,6 +22,6 @@ module.exports = (req, res) => {
     let weather = new RCWeather(res.data.data)
     res.json(weather.weathertoOBJS())
   } catch (err) {
-    res.send({err:"error"})
+    res.send({ err: 'error' })
   }
 }
