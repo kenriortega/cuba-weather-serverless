@@ -1,5 +1,7 @@
 # cuba-weather-serverless
 
-## Endpoints for API
+Currently the weather information is obtained from the Cuban search engine [www.redcuba.cu](https://www.redcuba.cu).
 
-- red cuba data endpoint this `<vercel-prod-link>/api/get-weather?name=cerro`
+## List of enpoints
+
+- [/api/get-weather?name=cerro](https://cuba-weather-serverless.vercel.app/api/get-weather?name=cerro) the weather information from [www.redcuba.cu](https://www.redcuba.cu)
