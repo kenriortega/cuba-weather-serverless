@@ -4,8 +4,6 @@ const {
     RED_CUBA_SOURCE,
     MUNICIPALITIES,
     UtilsService,
-    IsmetWeather,
-    IsmetClient
   } = require('cuba-weather-javascript')
 
 module.exports = (req, res) => {
