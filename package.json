@@ -1,0 +1,15 @@
+{
+  "name": "cuba-weather-serverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cuba-weather-javascript": "^1.0.10"
+  }
+}
