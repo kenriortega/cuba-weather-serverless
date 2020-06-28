@@ -7,8 +7,6 @@ const {
 } = require('cuba-weather-javascript')
 
 module.exports = async (req, res) => {
-  // res.json({ name: , email: 'john@example.com' })
-
   let municipality = MUNICIPALITIES.find(
     municipality => municipality.nameCured === req.query.name
   )
@@ -18,10 +16,10 @@ module.exports = async (req, res) => {
   )
 
   try {
-    let res = await RCApiClient.get(bestSource.name)
-    let weather = new RCWeather(res.data.data)
-    res.json(weather.weathertoOBJS())
+    let response = await RCApiClient.get(bestSource.name)
+    let weather = new RCWeather(response.data.data)
+    res.send(weather.weathertoOBJS())
   } catch (err) {
-    res.json({ err })
+    res.send({ err })
   }
 }
