@@ -21,6 +21,6 @@ module.exports = (req, res) => {
     let weather = new RCWeather(res.data.data)
     res.send(weather.weathertoOBJS())
   } catch (err) {
-    res.send(err)
+    res.send({err:"error"})
   }
 }
