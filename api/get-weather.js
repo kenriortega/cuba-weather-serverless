@@ -7,7 +7,7 @@ const {
 } = require('cuba-weather-javascript')
 
 module.exports = (req, res) => {
-  res.json({ name: 'John', email: 'john@example.com' })
+  res.json({ name: req.query, email: 'john@example.com' })
   // const name = req.query.name
   // let municipality = MUNICIPALITIES.find(
   //   municipality => municipality.nameCured === name
